@@ -37,7 +37,7 @@ header nav ul li a {
 }
 
 header nav ul li .book-now {
-    background-color: #4CAF50;
+    background-color: #275347;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -46,7 +46,7 @@ header nav ul li .book-now {
 }
 
 header nav ul li .book-now:hover {
-    background-color: #45a049;
+    background-color: #244C41;
 }
 
 .hero {
