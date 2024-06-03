@@ -1,143 +1,99 @@
-/* styles.css */
-
-/* Red Shades */
-.red-background {
-    background-color: #FF0000;
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.red-text {
-    color: #FF0000;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.red-border {
-    border: 2px solid #FF0000;
+header .logo img {
+    height: 50px;
 }
 
-/* Green Shades */
-.green-background {
-    background-color: #00FF00;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.green-text {
-    color: #00FF00;
+header nav ul li {
+    margin: 0 10px;
 }
 
-.green-border {
-    border: 2px solid #00FF00;
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-/* Blue Shades */
-.blue-background {
-    background-color: #0000FF;
+header nav ul li .book-now {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.blue-text {
-    color: #0000FF;
+header nav ul li .book-now:hover {
+    background-color: #45a049;
 }
 
-.blue-border {
-    border: 2px solid #0000FF;
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
 }
 
-/* Yellow Shades */
-.yellow-background {
-    background-color: #FFFF00;
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
-.yellow-text {
-    color: #FFFF00;
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
-.yellow-border {
-    border: 2px solid #FFFF00;
+.hero h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-/* Purple Shades */
-.purple-background {
-    background-color: #800080;
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.1em;
 }
 
-.purple-text {
-    color: #800080;
+.search-box {
+    margin-top: 20px;
 }
 
-.purple-border {
-    border: 2px solid #800080;
-}
-
-/* Orange Shades */
-.orange-background {
-    background-color: #FFA500;
-}
-
-.orange-text {
-    color: #FFA500;
-}
-
-.orange-border {
-    border: 2px solid #FFA500;
-}
-
-/* Pink Shades */
-.pink-background {
-    background-color: #FFC0CB;
-}
-
-.pink-text {
-    color: #FFC0CB;
-}
-
-.pink-border {
-    border: 2px solid #FFC0CB;
-}
-
-/* Teal Shades */
-.teal-background {
-    background-color: #008080;
-}
-
-.teal-text {
-    color: #008080;
-}
-
-.teal-border {
-    border: 2px solid #008080;
-}
-
-/* Gray Shades */
-.gray-background {
-    background-color: #808080;
-}
-
-.gray-text {
-    color: #808080;
-}
-
-.gray-border {
-    border: 2px solid #808080;
-}
-
-/* Black and White */
-.black-background {
-    background-color: #000000;
-}
-
-.black-text {
-    color: #000000;
-}
-
-.black-border {
-    border: 2px solid #000000;
-}
-
-.white-background {
-    background-color: #FFFFFF;
-}
-
-.white-text {
-    color: #FFFFFF;
-}
-
-.white-border {
-    border: 2px solid #FFFFFF;
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
