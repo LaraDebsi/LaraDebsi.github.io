@@ -52,9 +52,9 @@ header nav ul li .book-now:hover {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-image: url('images/home_bg.jpeg');
+    /*background-image: url('images/home_bg.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     color: white;
     position: relative;
     margin-top: 200px;
@@ -62,7 +62,11 @@ header nav ul li .book-now:hover {
     z-index: 1;
 }
 
-.hero::after {
+.hero-text {
+    margin-top: 50px;
+}
+
+/*.hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -71,7 +75,7 @@ header nav ul li .book-now:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
-}
+}*/
 
 .hero h1, .hero h2, .hero p, .search-box {
     position: relative;
@@ -93,6 +97,11 @@ header nav ul li .book-now:hover {
     max-width: 600px;
     margin: 20px auto;
     font-size: 1.1em;
+}
+
+.hero-image-container {
+    position: relative;
+    margin-top: 20px;
 }
 
 .hero-image {
