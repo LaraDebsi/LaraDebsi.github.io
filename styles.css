@@ -52,7 +52,7 @@ header nav ul li .book-now:hover {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-image: url('path/to/hero-image.jpg');
+    background-image: url('home_bg.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
