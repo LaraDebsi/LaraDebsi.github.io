@@ -75,6 +75,7 @@ header nav ul li .book-now:hover {
 .hero h1 {
     font-size: 3em;
     margin: 0;
+    margin-top: 50px;
 }
 
 .hero h2 {
