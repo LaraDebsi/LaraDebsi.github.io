@@ -1,0 +1,143 @@
+/* styles.css */
+
+/* Red Shades */
+.red-background {
+    background-color: #FF0000;
+}
+
+.red-text {
+    color: #FF0000;
+}
+
+.red-border {
+    border: 2px solid #FF0000;
+}
+
+/* Green Shades */
+.green-background {
+    background-color: #00FF00;
+}
+
+.green-text {
+    color: #00FF00;
+}
+
+.green-border {
+    border: 2px solid #00FF00;
+}
+
+/* Blue Shades */
+.blue-background {
+    background-color: #0000FF;
+}
+
+.blue-text {
+    color: #0000FF;
+}
+
+.blue-border {
+    border: 2px solid #0000FF;
+}
+
+/* Yellow Shades */
+.yellow-background {
+    background-color: #FFFF00;
+}
+
+.yellow-text {
+    color: #FFFF00;
+}
+
+.yellow-border {
+    border: 2px solid #FFFF00;
+}
+
+/* Purple Shades */
+.purple-background {
+    background-color: #800080;
+}
+
+.purple-text {
+    color: #800080;
+}
+
+.purple-border {
+    border: 2px solid #800080;
+}
+
+/* Orange Shades */
+.orange-background {
+    background-color: #FFA500;
+}
+
+.orange-text {
+    color: #FFA500;
+}
+
+.orange-border {
+    border: 2px solid #FFA500;
+}
+
+/* Pink Shades */
+.pink-background {
+    background-color: #FFC0CB;
+}
+
+.pink-text {
+    color: #FFC0CB;
+}
+
+.pink-border {
+    border: 2px solid #FFC0CB;
+}
+
+/* Teal Shades */
+.teal-background {
+    background-color: #008080;
+}
+
+.teal-text {
+    color: #008080;
+}
+
+.teal-border {
+    border: 2px solid #008080;
+}
+
+/* Gray Shades */
+.gray-background {
+    background-color: #808080;
+}
+
+.gray-text {
+    color: #808080;
+}
+
+.gray-border {
+    border: 2px solid #808080;
+}
+
+/* Black and White */
+.black-background {
+    background-color: #000000;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.black-border {
+    border: 2px solid #000000;
+}
+
+.white-background {
+    background-color: #FFFFFF;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.white-border {
+    border: 2px solid #FFFFFF;
+}
