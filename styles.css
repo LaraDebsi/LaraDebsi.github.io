@@ -58,7 +58,7 @@ header nav ul li .book-now:hover {
     color: white;
     position: relative;
     margin-top: 80px;
-    min-height: 500px
+    min-height: 600px
 }
 
 .hero::after {
