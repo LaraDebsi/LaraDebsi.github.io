@@ -80,6 +80,7 @@ header nav ul li .book-now:hover {
     padding: 10px 10px;
     color: #20332E;
     position: relative;
+    top: -25px
 }
 
 .title h1 {
