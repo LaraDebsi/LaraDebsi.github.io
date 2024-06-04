@@ -93,6 +93,7 @@ header nav ul li .book-now:hover {
 
 .title p {
     max-width: 600px;
+    width: 50%;
     margin: 20px auto;
     font-size: 1.1em;
 }
