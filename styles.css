@@ -74,6 +74,8 @@ header nav ul li .book-now:hover {
 }
 
 .title {
+    max-width: 600px;
+    width: 100%;
     background: #FCFAEC;
     font: bold;
     text-align: center;
@@ -95,8 +97,6 @@ header nav ul li .book-now:hover {
 }
 
 .title p {
-    max-width: 600px;
-    width: 100%;
     margin: 20px auto;
     font-size: 1.1em;
 }
