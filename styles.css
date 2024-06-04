@@ -115,7 +115,7 @@ header nav ul li .book-now:hover {
 }
 
 .search-box input[type="text"] {
-    width: 80%;
+    width: 50%;
     padding: 10px;
     font-size: 1em;
     border: none;
