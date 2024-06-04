@@ -108,6 +108,8 @@ header nav ul li .book-now:hover {
 
 .search-box {
     margin-top: 5px;
+    min-height: 20px;
+
 }
 
 .search-box input[type="text"] {
