@@ -78,6 +78,7 @@ header nav ul li .book-now:hover {
     padding: 10px 10px;
     color: #20332E;
     position: relative;
+    
 }
 
 .title h1 {
@@ -88,7 +89,7 @@ header nav ul li .book-now:hover {
 
 .title h2 {
     font-size: 1em;
-    margin: 10px 0;
+    margin: 50px 0;
 }
 
 .title p {
@@ -101,7 +102,7 @@ header nav ul li .book-now:hover {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto 0; /* Add margin to the image to space it correctly */
+    margin: 20px auto 0; 
     position: relative;
     z-index: -2; 
 }
