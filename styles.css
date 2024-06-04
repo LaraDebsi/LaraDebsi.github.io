@@ -70,7 +70,7 @@ header nav ul li .book-now:hover {
 }
 
 .title {
-    background-color: #FCFAEC;
+    background: #FCFAEC;
     text-align: center;
     padding: 50px 20px;
     color: white;
