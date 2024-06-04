@@ -53,9 +53,8 @@ header nav ul li .book-now:hover {
     background-image: url('images/home_bg.jpeg');
     background-size: cover;
     background-position: center;
-    
-    margin-top: 200px;
-    min-height: 550px;
+    margin-top: 50px;
+    min-height: 500px;
     z-index:1;
 }
 
@@ -104,7 +103,7 @@ header nav ul li .book-now:hover {
 }
 
 .search-box {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .search-box input[type="text"] {
