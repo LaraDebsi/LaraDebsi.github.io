@@ -50,6 +50,8 @@ header nav ul li .book-now:hover {
 }
 
 .hero {
+    text-align: center;
+    position: relative;
     background-image: url('images/home_bg.jpeg');
     background-size: cover;
     background-position: center;
