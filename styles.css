@@ -43,6 +43,7 @@ header nav ul li .book-now {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 header nav ul li .book-now:hover {
