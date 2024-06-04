@@ -37,13 +37,13 @@ header nav ul li a {
 }
 
 header nav ul li .book-now {
+    border-radius: 10px;
     background-color: #275347;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 10px;
 }
 
 header nav ul li .book-now:hover {
