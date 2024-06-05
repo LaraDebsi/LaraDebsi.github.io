@@ -134,23 +134,20 @@ header nav ul li .book-now:hover {
     color: white;
     border: none;
     padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .offerings-header h2 {
     font-size: 2em;
     color: #FCFAEC;
     font: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 .offerings-header p {
     font-size: 1.2em;
     color: #F7F7F7;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 .offerings-grid {
