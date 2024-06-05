@@ -190,6 +190,7 @@ header nav ul li .book-now:hover {
 }
 
 
+/* Instructors Section */
 .instructors {
     background-color: #FCFAEC;
     padding: 40px 20px;
@@ -222,12 +223,21 @@ header nav ul li .book-now:hover {
     position: relative;
 }
 
+.instructor-card.reverse {
+    flex-direction: row-reverse;
+}
+
 .instructor-card img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
     margin-left: 20px;
+}
+
+.instructor-card.reverse img {
+    margin-left: 0;
+    margin-right: 20px;
 }
 
 .instructor-info {
