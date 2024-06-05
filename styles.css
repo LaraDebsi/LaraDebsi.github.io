@@ -11,13 +11,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 20px 20px;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
     height: 60px;
-    padding: 20px, 20px;
 }
 
 header nav ul {
@@ -42,7 +41,7 @@ header nav ul li .book-now {
     background-color: #275347;
     color: white;
     border: none;
-    padding: 20px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -75,13 +74,13 @@ header nav ul li .book-now:hover {
 }
 
 .title {
+
     background: #FCFAEC;
     font: bold;
     text-align: center;
     padding: 10px 10px;
     color: #20332E;
     position: relative;
-    top: -25px
 }
 
 .title h1 {
