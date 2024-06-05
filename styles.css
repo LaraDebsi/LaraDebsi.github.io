@@ -133,8 +133,13 @@ header nav ul li .book-now:hover {
 }
 
 .offerings-header h2 {
+    border-radius: 10px;
+    background-color: #275347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     font-size: 2em;
-    color: #275347;
+    color: #FCFAEC;
 }
 
 .offerings-header p {
