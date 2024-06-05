@@ -122,3 +122,55 @@ header nav ul li .book-now:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.offerings {
+    background-color: #F5F5DC;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.offerings-header {
+    margin-bottom: 20px;
+}
+
+.offerings-header h2 {
+    font-size: 2em;
+    color: #275347;
+}
+
+.offerings-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.offerings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #555;
+}
