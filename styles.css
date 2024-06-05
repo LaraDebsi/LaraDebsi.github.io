@@ -139,6 +139,7 @@ header nav ul li .book-now:hover {
 .offerings-header h2 {
     font-size: 2em;
     color: #FCFAEC;
+    font: bold;
 }
 
 .offerings-header p {
