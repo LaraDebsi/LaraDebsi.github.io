@@ -189,10 +189,10 @@ header nav ul li .book-now:hover {
     color: #555;
 }
 
+
 .instructors {
     background-color: #FCFAEC;
     padding: 40px 20px;
-    text-align: center;
 }
 
 .instructors-header {
@@ -201,6 +201,7 @@ header nav ul li .book-now:hover {
     color: white;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .instructors-header h2 {
@@ -216,8 +217,9 @@ header nav ul li .book-now:hover {
 .instructor-card {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: left;
+    position: relative;
 }
 
 .instructor-card img {
@@ -225,28 +227,27 @@ header nav ul li .book-now:hover {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .instructor-info {
     flex: 1;
-    background-color: #f7f7f7;
     padding: 20px;
-    border-radius: 10px;
+    background: none;
 }
 
 .instructor-title {
-    background-color: #FCFAEC;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     text-align: center;
+    color: #fff;
 }
 
 .instructor-title h3 {
     font-size: 1.5em;
     margin: 0;
-    color: #275347;
 }
 
 .instructor-info p {
@@ -262,6 +263,7 @@ header nav ul li .book-now:hover {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .read-more:hover {
