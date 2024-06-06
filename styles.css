@@ -201,7 +201,7 @@ header nav ul li .book-now:hover {
     margin-bottom: 20px;
     background-color: #275347;
     color: white;
-    padding: 20px;
+    padding: 20px, 0px;
     text-align: left;
 }
 
@@ -223,7 +223,7 @@ header nav ul li .book-now:hover {
     text-align: left;
     position: relative;
     background: none;
-    border-color: #244C41;
+    border: #244C41;
 }
 
 .instructor-card.reverse {
