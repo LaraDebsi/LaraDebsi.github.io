@@ -194,7 +194,7 @@ header nav ul li .book-now:hover {
 .instructors {
     background-color: #FCFAEC;
     padding: 40px 20px;
-    width:100%;
+    
 }
 
 .instructors-header {
@@ -203,6 +203,7 @@ header nav ul li .book-now:hover {
     color: white;
     padding: 20px;
     text-align: left;
+    width:100%;
 }
 
 .instructors-header h2 {
