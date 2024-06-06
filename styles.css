@@ -233,8 +233,8 @@ header nav ul li .book-now:hover {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px;
     margin-left: 20px;
+    border-color: #244C41;
 }
 
 .instructor-card.reverse img {
