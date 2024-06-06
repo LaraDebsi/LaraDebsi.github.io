@@ -283,51 +283,44 @@ header nav ul li .book-now:hover {
 
 
 .location {
-    background-color: #FCFAEC;
+    width: 100%;
+    background-color: #fcfaec;
     padding: 40px 20px;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.location-header h2 {
-    font-size: 2em;
-    color: #275347;
-}
-
-.location-header p {
-    font-size: 1.2em;
-    color: #828282;
-}
-
-.location-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.map img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.contact-info {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
-    text-align: left;
-}
-
-.contact-info h3 {
-    font-size: 1.5em;
-    color: #275347;
+.location h2 {
     margin-bottom: 10px;
 }
 
-.contact-info p {
-    color: #555;
+.location p {
+    margin-bottom: 20px;
+}
+
+.location .location-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.location .location-map img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+}
+
+.location .location-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.location .location-info h3 {
+    margin-top: 0;
+}
+
+.location .location-info p {
     margin: 5px 0;
 }
