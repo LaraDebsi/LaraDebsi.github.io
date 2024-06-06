@@ -1,8 +1,9 @@
 /* General styles */
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width:100%;
     background-color: #FCFAEC;
 }
 
@@ -284,42 +285,49 @@ header nav ul li .book-now:hover {
 .location {
     width: 100%;
     background-color: #fcfaec;
-    padding: 40px 20px;
+    padding: 40px 0;
     box-sizing: border-box;
     text-align: center;
 }
 
+.location-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .location h2 {
-    margin-bottom: 10px;
+    color: #2c5f2d;
 }
 
 .location p {
-    margin-bottom: 20px;
+    color: #666;
 }
 
-.location .location-details {
+.location-details {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
 }
 
-.location .location-map img {
+.location-map img {
     width: 100%;
     max-width: 400px;
     border: 1px solid #ccc;
 }
 
-.location .location-info {
+.location-info {
     max-width: 400px;
     text-align: left;
 }
 
-.location .location-info h3 {
+.location-info h3 {
     margin-top: 0;
+    color: #2c5f2d;
 }
 
-.location .location-info p {
+.location-info p {
     margin: 5px 0;
 }
