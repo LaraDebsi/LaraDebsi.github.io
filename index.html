@@ -149,45 +149,55 @@
             </div>
         </section>
         <section class="book-stay">
+            <div class="book-header">
+                <div class="stay-header">
+                    <h2>Your Stay</h2>
+                </div>
+                <div class="activities-header">
+                    <h2>Your Activities</h2>
+                </div>
+            </div>
             <div class="container">
-                <h2>Book your stay with us!</h2>
-                <p>Start your vacation adventures today...</p>
                 <div class="booking-form">
-                    <div class="form-group">
-                        <label for="dates">Add Dates</label>
-                        <input type="date" id="dates" name="dates">
+                    <div class="stay-section">
+                        <div class="form-group">
+                            <label for="dates">Add Dates</label>
+                            <input type="date" id="dates" name="dates">
+                        </div>
+                        <div class="form-group">
+                            <label for="campground">Campground</label>
+                            <select id="campground" name="campground">
+                                <option>RV</option>
+                                <option>Water View</option>
+                                <option>Forest Privacy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="10">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="campground">Campground</label>
-                        <select id="campground" name="campground">
-                            <option>RV</option>
-                            <option>Water View</option>
-                            <option>Forest Privacy</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Guests</label>
-                        <input type="number" id="guests" name="guests" min="1" max="10">
-                    </div>
-                    <div class="form-group">
-                        <label for="activities">Activities</label>
-                        <select id="activities" name="activities" multiple>
-                            <option>Hiking</option>
-                            <option>Volleyball Match/Tournament</option>
-                            <option>Zipline Adventure</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="instructors">Instructors</label>
-                        <select id="instructors" name="instructors" multiple>
-                            <option>Hiking Leaders</option>
-                            <option>Volleyball Instructor</option>
-                            <option>Zipline Adventure Guide</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="date-time">Date/Time</label>
-                        <input type="datetime-local" id="date-time" name="date-time">
+                    <div class="activities-section">
+                        <div class="form-group">
+                            <label for="activities">Activities</label>
+                            <select id="activities" name="activities" multiple>
+                                <option>Hiking</option>
+                                <option>Volleyball Match/Tournament</option>
+                                <option>Zipline Adventure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="instructors">Instructors</label>
+                            <select id="instructors" name="instructors" multiple>
+                                <option>Hiking Leaders</option>
+                                <option>Volleyball Instructor</option>
+                                <option>Zipline Adventure Guide</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date-time">Date/Time</label>
+                            <input type="datetime-local" id="date-time" name="date-time">
+                        </div>
                     </div>
                 </div>
                 <div class="user-info">
