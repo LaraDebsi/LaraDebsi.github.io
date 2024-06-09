@@ -1,29 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-  </head>
-</html>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</html>
-<link rel="stylesheet" type="text/css" href="styles.css"> 
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeadowLands Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,26 +14,54 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Instructors</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><button class="book-now">Book Now</button></li>
-            </ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><button class="book-now"><a href="#booking">Book Now</a></button></li>
+            </ul>   
         </nav>
     </header>
     <main>
-        <section class="title">
+        <section id="home" class="title">
             <h1>MeadowLands Park</h1>
             <h2>-- Relax by the Water's Edge --</h2>
             <p>Welcome to MeadowLands Park! Where nature's beauty meets serene relaxation. Nestled by the water's edge, our park offers a tranquil escape from the hustle and bustle of everyday life. Whether you're looking to camp under the stars, enjoy a peaceful hike, or simply unwind by the lake, MeadowLands Park provides the perfect setting for your outdoor adventure. Experience the joy of nature and create lasting memories with us.</p>
         </section>
         <div class="hero">
             <div class="search-box">
-                <input type="text" placeholder="What’s your ideal camp ground">
+                <div class="search-container">
+                    <div class="col-md-6 d-flex align-items-center dropdown-container">
+                        <label for="campground"> <b>Campground</b></label>
+                        <select class="form-select" id="campground-dropdown" required>
+                            <option value="" selected disabled>Select a campground</option>
+                            <option value="services">All Campgrounds</option>
+                            <option value="RV">RV</option>
+                            <option value="By the Water">By the Water</option>
+                            <option value="Deep in the Forest">Deep in the Forest</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a campground.
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center dropdown-container">
+                        <label for="activities"> <b>Activities</b></label>
+                        <select class="form-select" id="activities-dropdown" required>
+                            <option value="" selected disabled>Select an activity</option>
+                            <option value="services">All Activities</option>
+                            <option value="Hiking">Hiking</option>
+                            <option value="Volleyball Tournament">Volleyball Tournament</option>
+                            <option value="Zipline Adventure">Zipline Adventure</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select an activity.
+                        </div>
+                    </div>
+                    <button id="search-button" class="btn btn-search">SEARCH</button>
+                </div>
             </div>
         </div>
-        <section class="offerings">
+        <section id="services" class="offerings">
             <div class="offerings-header">
                 <h2>What do we offer?</h2>
                 <p>Find the perfect campground and activities for you</p>
@@ -62,35 +71,43 @@
                     <img src="images/by_the_water.jpeg" alt="By The Water">
                     <h3>By The Water</h3>
                     <p>Enjoy your stay with your own view of the water shore with your RV or tent</p>
+                    <p><b><i>$100.00/night</i></b></p>
                 </div>
                 <div class="card">
                     <img src="images/rv_camp.jpeg" alt="RV Camp">
                     <h3>RV Camp</h3>
                     <p>Set up any length of RV in our various sized campgrounds with full provided services</p>
+                    <p><b><i>$120.00/night</i></b></p>
                 </div>
                 <div class="card">
                     <img src="images/deep_in_forest.jpeg" alt="Deep in the Forest">
                     <h3>Deep in the Forest</h3>
                     <p>Camp with all the privacy you desire in the depths of the forest</p>
+                    <p><b><i>$85.00/night</i></b></p>
                 </div>
                 <div class="card">
                     <img src="images/hiking.jpeg" alt="Hiking">
                     <h3>Hiking</h3>
-                    <p>Several hiking trails for all levels and lengths</p>
+                    <p>Several hiking trails for all levels and lengths<br><br><br></p>
+                    <p><b><i>FREE w/ no instructors</i></b></p>
+                    <p><i>for more details check "Hiking Leaders" section</i></p>
                 </div>
                 <div class="card">
                     <img src="images/beach_volley.jpeg" alt="Beach Volleyball Tournament">
                     <h3>Beach Volleyball Tournament</h3>
                     <p>Spend some time on the beach playing friendly matches of volleyball with friends and friendly strangers</p>
+                    <p><b><i>FREE w/ no instructors</i></b></p>
+                    <p><i>for more details check "Volleyball Intructors" section</i></p>
                 </div>
                 <div class="card">
                     <img src="images/zipline.jpeg" alt="Zipline Adventures">
                     <h3>Zipline Adventures</h3>
-                    <p>Let your kids spend the day in our zipline adventure park in our forest with the best instructors</p>
+                    <p>Let yourself and your kids spend the day in our zipline adventure park in our forest with the best instructors</p>
+                    <p><b><i>$50.00-$75.00 (age) </i></b></p>
                 </div>
             </div>
         </section>
-        <section class="instructors">
+        <section id="instructors" class="instructors">
             <div class="instructors-header">
                 <h2>Who can help you?</h2>
                 <p>Select an instructor for all our activities throughout your stay!</p>
@@ -101,9 +118,9 @@
                     <div class="instructor-title">
                         <h3>HIKING LEADERS</h3>
                     </div>
-                    <p>Leaders for any hike trail wanted…</p>
-                    <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-                    <button class="read-more">Read more</button>
+                    <p><b>Leaders for any hike trail wanted…</b></p>
+                    <p>At MeadowLands Park, our Hiking Leaders are dedicated to providing an unforgettable hiking experience. Whether you're a seasoned hiker or a beginner, our knowledgeable guides will take you on scenic trails, sharing insights about the local flora and fauna along the way. Our leaders ensure safety while making the hike enjoyable and informative for all participants. Join us for a 2-hour session filled with breathtaking views and nature exploration for just $50 per person.</p>
+                    
                 </div>
             </div>
             <div class="instructor-card reverse">
@@ -112,9 +129,9 @@
                     <div class="instructor-title">
                         <h3>VOLLEYBALL INSTRUCTORS</h3>
                     </div>
-                    <p>Volleyball instructors for any and all levels of playing experience…</p>
-                    <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</p>
-                    <button class="read-more">Read more</button>
+                    <p><b>Volleyball instructors for any and all levels of playing experience…</b></p>
+                    <p>Get ready to spike, serve, and volley with our expert Volleyball Instructors at MeadowLands Park. Suitable for all skill levels, our instructors provide personalized coaching to enhance your game, whether you’re looking to perfect your technique or just have fun on the beach. Our sessions are designed to be engaging and supportive, ensuring everyone enjoys the sport. Book a 1.5-hour session with our Volleyball Instructors for only $40 per person.</p>
+                
                 </div>
             </div>
             <div class="instructor-card">
@@ -123,105 +140,145 @@
                     <div class="instructor-title">
                         <h3>ZIPLINE ADVENTURE GUIDES</h3>
                     </div>
-                    <p>Zipline adventure guides to keep you and your children safe during your experience…</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-                    <button class="read-more">Read more</button>
+                    <p><b>Zipline adventure guides to keep you and your children safe during your experience…</b></p>
+                    <p>Experience the thrill of soaring through the treetops with our Zipline Adventure Guides. At MeadowLands Park, our guides prioritize your safety and enjoyment, offering an exhilarating zipline adventure that’s perfect for families and thrill-seekers alike. With professional equipment and expert guidance, you'll glide over the forest, taking in stunning aerial views. Each 2-hour zipline adventure session is available for $60 per person, promising an adrenaline-pumping experience you won’t forget.</p>
+                    
                 </div>
             </div>
         </section>
-        <section class="location">
+        <section id="contact" class="location">
+            <h2>Our location</h2>
+            <h4>Contact us for any questions and inquiries</h4>
             <div class="location-content">
-                <h2>Our location</h2>
-                <p>Contact us for any questions and inquiries</p>
-                <div class="location-details">
-                    <div class="location-map">
-                        <img src="images/map_location.png" alt="Map">
-                    </div>
-                    <div class="location-info">
-                        <h3>MeadowLand Park</h3>
-                        <p>street address line 1<br>province, city<br>postal code</p>
-                        <p><a href="(613) 123 4567">(613) 123 4567<br></a></p>
-                        <p><a href="mailto:meadowlands@email.ca">meadowlands@email.ca</a></p>
-                        <p>Opening Hours</p>
-                        <p>Weekdays: 8:30 - 21:00<br>Weekends & Holidays: 10:00 - 17:00</p>
-                    </div>
+                <div class="location-map">
+                    <img src="images/map_location.png" alt="Map">
+                </div>
+                <div class="location-info">
+                    <h3>MeadowLand Park</h3>
+                    <p>456 Wellington Street<br>Kingston, ON<br>K7K 1X9</p>
+                    <p><a href="(613) 123 4567">(613) 123 4567</a></p>
+                    <p><a href="mailto:meadowlands@email.ca">meadowlands@email.ca</a></p>
+                    <h3>Opening Hours</h3>
+                    <p><b>Weekdays:</b> <br> 8:30 - 21:00<br><b>Weekends & Holidays: </b><br>10:00 - 17:00</p>
                 </div>
             </div>
         </section>
-        <section class="book-stay">
-            <div class="book-header">
-                <div class="stay-header">
-                    <h2>Your Stay</h2>
+        <section id="booking" class="booking-section">
+            <div class="booking-header">
+                <h2>Book Your Stay with Us!</h2>
+                <p>Start your vacation adventures today...</p>
+            </div>
+            <div class="booking-container">
+                <div class="booking-column">
+                    <div class="section-header">YOUR STAY</div>
+                    <div class="form-group">
+                        <label for="start-date"><i class="icon">📅</i> Start Date</label>
+                        <input type="date" id="start-date" placeholder="Select Start Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date"><i class="icon">📅</i> End Date</label>
+                        <input type="date" id="end-date" placeholder="Select End Date">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="campground"><i class="icon">🏕️</i> <b>Campground</b></label>
+                            <select class="form-select" id="campground" required>
+                                <option value="" selected disabled>Select a campground</option>
+                                <option value="rv_camp">RV</option>
+                                <option value="by_the_water">By the Water</option>
+                                <option value="deep_in_forest">Deep in the Forest</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a campground.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="group-size"><i class="icon">👩‍👧‍👦</i> <b>Group Size (max 10)</b></label>
+                            <select class="form-select" id="group-size">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="activities-header">
-                    <h2>Your Activities</h2>
+                <div class="booking-column">
+                    <div class="section-header">YOUR ACTIVITIES</div>
+                    <div class="form-group">
+                        <label for="activities"><i class="icon">🚴</i> <b>Activities</b></label>
+                        <select class="form-select" id="activities" required>
+                            <option value="" selected disabled>Select an activity</option>
+                            <option value="services">All Activities</option>
+                            <option value="Hiking">Hiking</option>
+                            <option value="Volleyball Tournament">Volleyball Tournament</option>
+                            <option value="Zipline Adventure">Zipline Adventure</option>
+                            <option value="Volleyball Tournament + Hiking">Volleyball Tournament + Hiking</option>
+                            <option value="Hiking + Zipline Adventure">Hiking + Zipline Adventure</option>
+                            <option value="Volleyball Tournament + Zipline Adventure">Volleyball Tournament + Zipline Adventure</option>
+                            <option value="none">None</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select an activity.
+                        </div>
+                    </div>
+                    <div id="activity-fields" class="accordion"></div>
                 </div>
             </div>
-            <div class="container">
-                <div class="booking-form">
-                    <div class="stay-section">
-                        <div class="form-group">
-                            <label for="dates">Add Dates</label>
-                            <input type="date" id="dates" name="dates">
-                        </div>
-                        <div class="form-group">
-                            <label for="campground">Campground</label>
-                            <select id="campground" name="campground">
-                                <option>RV</option>
-                                <option>Water View</option>
-                                <option>Forest Privacy</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="guests">Guests</label>
-                            <input type="number" id="guests" name="guests" min="1" max="10">
-                        </div>
+            
+            <div class="booking-footer">
+                <h2>Your Information</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="John">
                     </div>
-                    <div class="activities-section">
-                        <div class="form-group">
-                            <label for="activities">Activities</label>
-                            <select id="activities" name="activities" multiple>
-                                <option>Hiking</option>
-                                <option>Volleyball Match/Tournament</option>
-                                <option>Zipline Adventure</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="instructors">Instructors</label>
-                            <select id="instructors" name="instructors" multiple>
-                                <option>Hiking Leaders</option>
-                                <option>Volleyball Instructor</option>
-                                <option>Zipline Adventure Guide</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="date-time">Date/Time</label>
-                            <input type="datetime-local" id="date-time" name="date-time">
-                        </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Doe">
                     </div>
-                </div>
-                <div class="user-info">
-                    <h2>Your Information</h2>
-                    <div class="user-form">
-                        <div class="form-group">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <button type="submit" class="confirm-booking">Confirm Booking</button>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john_doe@email.com">
                     </div>
-                </div>
+                    <button type="submit">Confirm Booking</button>
+                </form>
             </div>
+        </section>
+        <section id="booking-confirmation" style="display: none;">
+            <div class="confirmation-header">
+                <h2>Booking Confirmation</h2>
+                <p>Verify your information for maximum security</p>
+            </div>
+            <div class="confirmation-body">
+                <p>Your reservation request has been received and confirmed.</p>
+                <p>You will receive a confirmation email very soon.</p>
+            </div>
+            <div class="booking-details">
+                <h3>Booking Details</h3>
+                <p>Booking Number: <span id="booking-number">##########</span></p>
+                <p>Campground: <span id="confirm-campground"></span></p>
+                <p id="activities-confirmation"><span>Activities: <span id="confirm-activities"></span></span></p>
+                <p id="instructors-confirmation"><span>Instructors: <span id="confirm-instructors"></span></span></p>
+                <p id="stay-dates-confirmation"><span>Stay Dates: <span id="confirm-stay-dates"></span></span></p>
+                <p id="activity-dates-confirmation"><span>Activity Dates: <span id="confirm-activity-dates"></span></span></p>
+                <p id="hours-confirmation"><span>Time: <span id="confirm-hours"></span></span></p>
+            </div>
+            <button id="make-another-reservation">Make another reservation</button>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 MeadowLands Park. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz6LBQ7bU4Snd7U6pF1tBtTyU1HhZpH1JJ2fYICk7pG7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz6LBQ7bU4Snd7U6pF1tBtTyU1HhZpH1JJ2fYICk7pG7" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
 
