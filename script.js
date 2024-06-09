@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const cardButton = document.createElement('button');
                 cardButton.classList.add('accordion-button', 'collapsed');
                 cardButton.type = 'button';
-                cardButton.dataset.bsToggle = 'collapse';
-                cardButton.dataset.bsTarget = `#collapse-${setId}`;
+                cardButton.setAttribute('data-bs-toggle', 'collapse');
+                cardButton.setAttribute('data-bs-target', `#collapse-${setId}`);
                 cardButton.setAttribute('aria-expanded', 'false');
                 cardButton.setAttribute('aria-controls', `collapse-${setId}`);
                 cardButton.textContent = `Activity Set ${i + 1}`;
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 cardCollapse.id = `collapse-${setId}`;
                 cardCollapse.classList.add('accordion-collapse', 'collapse');
                 cardCollapse.setAttribute('aria-labelledby', `heading-${setId}`);
-                cardCollapse.dataset.bsParent = '#activity-fields';
+                cardCollapse.setAttribute('data-bs-parent', '#activity-fields');
 
                 const cardBody = document.createElement('div');
                 cardBody.classList.add('accordion-body');
