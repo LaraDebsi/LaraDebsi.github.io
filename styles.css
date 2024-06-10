@@ -111,6 +111,7 @@ header nav ul li .book-now:hover {
 .title p {
     margin: 20px auto;
     font-size: 1.1em;
+    text-align: justify;
 }
 
 .hero-image {
